@@ -4,15 +4,10 @@ function* generateLights() {
   for(let item in light){
   
     while(item <= light.length){
-     let i  = 0;   
-    yield light[i];    
-    i++
-    yield light[i];      
-     i++    
-    yield light[i]
-    i++
-    yield light[i]
-    i++                 
+     for(let i = 0; i <= light.length; i++){
+      yield light[i]
+    } 
+                   
     }       
   }  
 }
